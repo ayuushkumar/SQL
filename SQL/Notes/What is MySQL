@@ -1,0 +1,11 @@
+==> What is MySQL workbench?
+MySQL Workbench is a visual tool for database architects, developers, and DBAs.
+It provides data modeling, SQL development, and comprehensive administration tools for
+server configuration, user administration, backup, and much more.
+
+==> What is a Database Management System (DBMS)?
+A Database Management System (DBMS) is software that interacts with
+end users, applications, and the database itself to capture and analyze data.
+It allows for the creation, retrieval, updating, and management of data in databases.
+If you know one DBMS, you can easily transition to another,
+as they share similar concepts and functionalities.
