@@ -1,0 +1,13 @@
+==> What is a Database?
+A database is a container that stores related data in an organized way.
+In MySQL, a database holds one or more tables.
+
+Folder analogy:
+A database is like a folder.
+Each table is a file inside that folder.
+The rows in the table are like the content inside each file.
+
+Excel analogy:
+A database is like an Excel workbook.
+Each table is a separate sheet inside that workbook.
+Each row in the table is like a row in Excel.
