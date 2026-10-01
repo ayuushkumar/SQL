@@ -1,0 +1,10 @@
+==> What is a Query in SQL?
+A query in SQL (Structured Query Language) is a command used to communicate with a database.
+It allows you to retrieve, insert, update, or delete data stored in database tables.
+
+==> In simple words ->
+An SQL query is a request given to a database to perform a specific operation on the data.
+
+Example ->
+SELECT * FROM students;
+This query asks the database to retrieve all records from the students table.
