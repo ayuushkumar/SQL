@@ -1,0 +1,14 @@
+==> Constraints
+=====================================================================================
+AUTO_INCREMENT: Automatically generates a unique number for each row.
+=====================================================================================
+PRIMARY KEY:    Uniquely identifies each row in the table.
+=====================================================================================
+NOT NULL:       Ensures a column cannot have a NULL value.
+=====================================================================================
+UNIQUE:         Ensures all values in a column are different.
+=====================================================================================
+DEFAULT:        Sets a default value for a column if no value is provided.
+                eg. created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                is_active BOOLEAN DEFAULT TRUE
+=====================================================================================
