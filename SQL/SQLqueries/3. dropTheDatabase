@@ -1,0 +1,5 @@
+**You can delete the entire database (and all its tables) using:
+
+DROP DATABASE startersql;
+
+⚠️ "Be careful — this will delete everything in that database."
