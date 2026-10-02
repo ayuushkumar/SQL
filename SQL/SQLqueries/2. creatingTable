@@ -7,29 +7,4 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-==============================================================================
-
-==> AUTO_INCREMENT
-Automatically generates the next number whenever a new row is inserted.
-
-==> PRIMARY KEY
-Identifies each row uniquely.
-
-==> VARCHAR(100)
-VARCHAR means variable-length character/string.
-
-==> NOT NULL
-Means this column must have a value.
-
-==> UNIQUE
-Means duplicate values aren't allowed.
-
-==> ENUM
-It means the column can only contain values from a predefined list.
-
-==> TIMESTAMP
-A data type used to store a date and time.
-
-==> DEFAULT
-Defines a value that MySQL should automatically use if you don't provide one.
 
