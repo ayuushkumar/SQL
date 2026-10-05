@@ -15,3 +15,9 @@ SELECT * FROM users WHERE id > 10;
 SELECT * FROM users WHERE id >= 5;
 SELECT * FROM users WHERE id <= 20;
 
+-- NULL
+-- ==== IS NULL ====
+SELECT * FROM users WHERE date_of_birth IS NULL;
+
+-- ==== IS NOT NULL ====
+SELECT * FROM users WHERE date_of_birth IS NOT NULL;
