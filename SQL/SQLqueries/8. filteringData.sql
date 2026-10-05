@@ -1,0 +1,17 @@
+-- WHERE
+--==== Equal To ====
+SELECT * FROM users WHERE gender = 'Male';
+
+-- ==== Not Equal To ====
+SELECT * FROM users WHERE gender != 'Female';
+-- or
+SELECT * FROM users WHERE gender <> 'Female';
+
+-- ==== Greater Than / Less Than ====
+SELECT * FROM users WHERE date_of_birth < '1995-01-01';
+SELECT * FROM users WHERE id > 10;
+
+-- ==== Greater Than or Equal / Less Than or Equal ====
+SELECT * FROM users WHERE id >= 5;
+SELECT * FROM users WHERE id <= 20;
+
