@@ -36,3 +36,7 @@ SELECT * FROM users WHERE name LIKE '%li%'; -- Contains 'li'
 -- AND / OR
 SELECT * FROM users WHERE gender = 'Female' AND date_of_birth > '1990-01-01';
 SELECT * FROM users WHERE gender = 'Male' OR gender = 'Other';
+
+-- ORDER BY
+SELECT * FROM users ORDER BY date_of_birth ASC;
+SELECT * FROM users ORDER BY name DESC;
