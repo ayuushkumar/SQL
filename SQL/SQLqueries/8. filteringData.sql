@@ -24,3 +24,6 @@ SELECT * FROM users WHERE date_of_birth IS NOT NULL;
 
 -- BETWEEN
 SELECT * FROM users WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
+
+--IN
+SELECT * FROM users WHERE gender IN ('Male', 'Other');
