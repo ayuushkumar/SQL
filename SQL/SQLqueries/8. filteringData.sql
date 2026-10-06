@@ -32,3 +32,7 @@ SELECT * FROM users WHERE gender IN ('Male', 'Other');
 SELECT * FROM users WHERE name LIKE 'A%';  -- Starts with A
 SELECT * FROM users WHERE name LIKE '%a';  -- Ends with a
 SELECT * FROM users WHERE name LIKE '%li%'; -- Contains 'li'
+
+-- AND / OR
+SELECT * FROM users WHERE gender = 'Female' AND date_of_birth > '1990-01-01';
+SELECT * FROM users WHERE gender = 'Male' OR gender = 'Other';
