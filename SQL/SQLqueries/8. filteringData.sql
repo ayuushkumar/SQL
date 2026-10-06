@@ -21,3 +21,6 @@ SELECT * FROM users WHERE date_of_birth IS NULL;
 
 -- ==== IS NOT NULL ====
 SELECT * FROM users WHERE date_of_birth IS NOT NULL;
+
+-- BETWEEN
+SELECT * FROM users WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
