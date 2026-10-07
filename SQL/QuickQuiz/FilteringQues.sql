@@ -29,3 +29,32 @@ SELECT * FROM users WHERE salary > 60000 ORDER BY created_at DESC LIMIT 5;
 +----+--------+--------+---------------------+
 
 --==========================================================================
+-- Ques 2
+-- What does the following queries do?
+SELECT *
+FROM users
+ORDER BY salary DESC;
+--==========================================================================
+-- It displays all users, but sorts them by salary from highest to lowest.
+
+-- Example:
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+| 1  | Rahul  | 70000  |
+| 2  | Ayush  | 90000  |
+| 3  | Ravi   | 50000  |
+| 4  | Karan  | 80000  |
+| 5  | Raj    | 60000  |
++----+--------+--------+
+
+-- Output:
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+| 2  | Ayush  | 90000  |
+| 4  | Karan  | 80000  |
+| 1  | Rahul  | 70000  |
+| 5  | Raj    | 60000  |
+| 3  | Ravi   | 50000  |
++----+--------+--------+
