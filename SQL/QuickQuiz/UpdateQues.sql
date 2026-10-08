@@ -50,3 +50,33 @@ WHERE email = 'karan@example.com';
 | 2  | Ayush       | ayush@example.com |
 | 3  | Karan Kumar | karan@example.com |
 +----+-------------+-------------------+
+
+-- ============================================================================
+-- Ques 3
+-- Increase salary by ₹10,000 for all users whose salary is less than ₹60,000.
+-- ============================================================================
+UPDATE users
+SET salary = salary + 10000
+WHERE salary < 60000;
+
+-- Before
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+| 1  | Rahul  | 70000  |
+| 2  | Ayush  | 90000  |
+| 3  | Ravi   | 50000  |
+| 4  | Karan  | 80000  |
+| 5  | Raj    | 55000  |
++----+--------+--------+
+
+-- After
++----+--------+--------+
+| id | name   | salary |
++----+--------+--------+
+| 1  | Rahul  | 70000  |
+| 2  | Ayush  | 90000  |
+| 3  | Ravi   | 60000  |
+| 4  | Karan  | 80000  |
+| 5  | Raj    | 65000  |
++----+--------+--------+
