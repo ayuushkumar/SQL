@@ -80,3 +80,31 @@ WHERE salary < 60000;
 | 4  | Karan  | 80000  |
 | 5  | Raj    | 65000  |
 +----+--------+--------+
+
+-- ============================================================================
+-- Ques 4
+-- Set the gender of user Ravi to Other.
+-- ============================================================================
+UPDATE users
+SET gender = 'Other'
+WHERE name = 'Ravi';
+
+-- Before
++----+-------+--------+
+| id | name  | gender |
++----+-------+--------+
+| 1  | Rahul | Male   |
+| 2  | Ayush | Male   |
+| 3  | Ravi  | Male   |
+| 4  | Karan | Male   |
++----+-------+--------+
+
+-- After
++----+-------+--------+
+| id | name  | gender |
++----+-------+--------+
+| 1  | Rahul | Male   |
+| 2  | Ayush | Male   |
+| 3  | Ravi  | Other  |
+| 4  | Karan | Male   |
++----+-------+--------+
