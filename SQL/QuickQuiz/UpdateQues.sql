@@ -24,3 +24,29 @@ WHERE id = 5;
 | 4  | Karan  | 80000  |
 | 5  | Raj    | 70000  |
 +----+--------+--------+
+
+-- =========================================================================
+-- Ques 2
+-- Change the name of the user with email karan@example.com to Karan Kumar.
+-- =========================================================================
+UPDATE users
+SET name = 'Karan Kumar'
+WHERE email = 'karan@example.com';
+
+-- Before
++----+--------+-------------------+
+| id | name   | email             |
++----+--------+-------------------+
+| 1  | Rahul  | rahul@example.com |
+| 2  | Ayush  | ayush@example.com |
+| 3  | Karan  | karan@example.com |
++----+--------+-------------------+
+
+-- After
++----+-------------+-------------------+
+| id | name        | email             |
++----+-------------+-------------------+
+| 1  | Rahul       | rahul@example.com |
+| 2  | Ayush       | ayush@example.com |
+| 3  | Karan Kumar | karan@example.com |
++----+-------------+-------------------+
