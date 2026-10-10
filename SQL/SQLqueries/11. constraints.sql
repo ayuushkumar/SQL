@@ -8,3 +8,17 @@ ALTER TABLE users
     ADD CONSTRAINT unique_email UNIQUE (email);
 
 -- ===============================================================
+-- 2. NOT NULL Constraint
+-- Ensures that a column cannot contain NULL values.
+CREATE TABLE users (
+    id INT PRIMARY KEY, name VARCHAR(100) NOT NULL);
+
+-- Change an existing column to NOT NULL:
+ALTER TABLE users
+    MODIFY COLUMN name VARCHAR(100) NOT NULL;
+
+-- Make a column nullable again:
+ALTER TABLE users
+    MODIFY COLUMN name VARCHAR(100) NULL;
+
+-- ===============================================================
