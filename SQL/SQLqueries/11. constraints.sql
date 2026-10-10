@@ -22,3 +22,9 @@ ALTER TABLE users
     MODIFY COLUMN name VARCHAR(100) NULL;
 
 -- ===============================================================
+-- 3. CHECK Constraint
+-- Ensures that values in a column satisfy a specific condition.
+ALTER TABLE users
+    ADD CONSTRAINT chk_dob CHECK (date_of_birth > '2000-01-01');
+
+-- ===============================================================
