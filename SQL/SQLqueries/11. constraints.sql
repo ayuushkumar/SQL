@@ -38,3 +38,13 @@ ALTER TABLE users
     ALTER COLUMN is_active SET DEFAULT TRUE;
 
 -- ===============================================================
+-- 5. PRIMARY KEY Constraint
+-- Uniquely identifies each row. Must be NOT NULL and UNIQUE.
+CREATE TABLE users (
+    id INT PRIMARY KEY, name VARCHAR(100));
+
+-- Add later with ALTER TABLE:
+ALTER TABLE users
+    ADD PRIMARY KEY (id);
+
+-- ===============================================================
