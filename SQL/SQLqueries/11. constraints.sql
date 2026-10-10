@@ -28,3 +28,13 @@ ALTER TABLE users
     ADD CONSTRAINT chk_dob CHECK (date_of_birth > '2000-01-01');
 
 -- ===============================================================
+-- 4. DEFAULT Constraint
+-- Sets a default value for a column if none is provided during insert.
+CREATE TABLE users (
+    id INT PRIMARY KEY, is_active BOOLEAN DEFAULT TRUE);
+
+-- Add DEFAULT using ALTER TABLE:
+ALTER TABLE users
+    ALTER COLUMN is_active SET DEFAULT TRUE;
+
+-- ===============================================================
