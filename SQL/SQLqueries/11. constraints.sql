@@ -48,3 +48,9 @@ ALTER TABLE users
     ADD PRIMARY KEY (id);
 
 -- ===============================================================
+-- 6. AUTO_INCREMENT
+-- Used with PRIMARY KEY to automatically assign the next number.
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100));
+
+-- ===============================================================
