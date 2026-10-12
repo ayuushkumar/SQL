@@ -57,5 +57,24 @@ GROUP BY gender;
 +--------+------------+
 
 -- =========================================================================
+-- =========================================================================
+-- 2. String Functions
+
+-- LENGTH()
+-- Length of user names:
+SELECT name, LENGTH(name) AS name_length FROM users;
+
+-- =========================================================================
+-- LOWER() and UPPER()
+-- Convert names to lowercase or uppercase:
+SELECT name, LOWER(name) AS lowercase_name FROM users;
+SELECT name, UPPER(name) AS uppercase_name FROM users;
+
+-- =========================================================================
+-- CONCAT()
+-- Combine name and email:
+SELECT CONCAT(name, ' <', email, '>') AS user_contact FROM users;
+
+-- =========================================================================
 
 
