@@ -114,3 +114,9 @@ FROM users;
 SELECT id, MOD(id, 2) AS remainder FROM users;
 
 -- =========================================================================
+-- =========================================================================
+-- 5. Conditional Functions
+-- IF()
+SELECT name, gender,
+       IF(gender = 'Female', 'Yes', 'No') AS is_female
+FROM users;
