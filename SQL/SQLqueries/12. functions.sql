@@ -76,5 +76,26 @@ SELECT name, UPPER(name) AS uppercase_name FROM users;
 SELECT CONCAT(name, ' <', email, '>') AS user_contact FROM users;
 
 -- =========================================================================
+-- =========================================================================
+-- 3. Date Functions
 
+-- NOW()
+-- Current date and time:
+SELECT NOW();
 
+-- =========================================================================
+-- YEAR(), MONTH(), DAY()
+-- Extract parts of date_of_birth:
+SELECT name, YEAR(date_of_birth) AS birth_year FROM users;
+
+-- =========================================================================
+-- DATEDIFF()
+-- Find number of days between today and birthdate:
+SELECT name, DATEDIFF(CURDATE(), date_of_birth) AS days_lived FROM users;
+
+-- =========================================================================
+-- TIMESTAMPDIFF()
+-- Calculate age in years:
+SELECT name, TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) AS age FROM users;
+
+-- =========================================================================
