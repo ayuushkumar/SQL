@@ -1,0 +1,11 @@
+FUNCTIONS	        PURPOSE
+
+COUNT()	            Count rows
+SUM()	            Total of a column
+AVG()	            Average of values
+MIN()/MAX()	        Lowest / highest value
+LENGTH()	        String length
+CONCAT()	        Merge strings
+YEAR()/DATEDIFF()	Date breakdown / age
+ROUND()	            Rounding numbers
+IF()	            Conditional logic
