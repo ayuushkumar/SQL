@@ -1,0 +1,3 @@
+-- 1. Disabling AutoCommit
+-- When AutoCommit is off, you can explicitly control when to commit or rollback changes.
+-- To disable AutoCommit:

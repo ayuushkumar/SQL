@@ -1,0 +1,5 @@
+By default, MySQL operates in AutoCommit mode.
+This means that every SQL statement is treated as a transaction
+and is committed automatically.
+However, for more control over when changes are saved,
+you can turn AutoCommit off and manage transactions manually.
