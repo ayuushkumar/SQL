@@ -52,3 +52,8 @@ You can change the starting value of AUTO_INCREMENT using:
 ALTER TABLE users AUTO_INCREMENT = 1000;
 
 ========================================================================================
+Key Takeaways
+
+Use PRIMARY KEY for the main identifier of a row.
+Use UNIQUE for enforcing non-duplicate values in other columns (like email or phone).
+You can have only one primary key, but you can have many unique constraints.
