@@ -1,0 +1,35 @@
+A foreign key is a column that creates a link between two tables.
+It ensures that the value in one table must match a value in another table.
+
+This is used to maintain data integrity between related data.
+
+=====================================================================================
+Why Use Foreign Keys?
+
+Imagine this scenario:
+
+You have a users table. Now you want to store each user's address.
+Instead of putting address columns inside the users table,
+you create a separate addresses table, and link it to users using a foreign key.
+
+=====================================================================================
+Creating a Table with a Foreign Key
+
+Let’s create an addresses table where each address belongs to a user.
+
+CREATE TABLE addresses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    street VARCHAR(255),
+    city VARCHAR(100),
+    state VARCHAR(100),
+    pincode VARCHAR(10),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+Explanation:
+user_id is a foreign key.
+It references the id column in the users table.
+This ensures that every address must be linked to a valid user.
+
+=====================================================================================
