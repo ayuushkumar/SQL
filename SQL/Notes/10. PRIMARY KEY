@@ -36,3 +36,19 @@ To drop a PRIMARY KEY:
 -- ALTER TABLE users DROP PRIMARY KEY;
 
 =========================================================================================
+Auto Increment
+In MySQL, a PRIMARY KEY is often used with the AUTO_INCREMENT attribute to automatically
+generate unique values for new rows.
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+This means that every time you insert a new row,
+MySQL will automatically assign a unique value to the id column.
+You can change the starting value of AUTO_INCREMENT using:
+
+ALTER TABLE users AUTO_INCREMENT = 1000;
+
+========================================================================================
