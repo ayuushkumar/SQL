@@ -33,3 +33,17 @@ It references the id column in the users table.
 This ensures that every address must be linked to a valid user.
 
 =====================================================================================
+Dropping a Foreign Key
+To drop a foreign key, you need to know its constraint name.
+MySQL auto-generates it if you don’t specify one, or you can name it yourself:
+
+CREATE TABLE addresses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+To drop it:
+
+ALTER TABLE addresses
+DROP FOREIGN KEY fk_user;
