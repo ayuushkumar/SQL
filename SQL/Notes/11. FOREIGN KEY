@@ -47,3 +47,11 @@ To drop it:
 
 ALTER TABLE addresses
 DROP FOREIGN KEY fk_user;
+
+=====================================================================================
+Adding a Foreign Key Later (Using ALTER)
+Suppose the foreign key was not defined during table creation.
+You can add it later using ALTER TABLE:
+
+ALTER TABLE addresses
+ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id);
