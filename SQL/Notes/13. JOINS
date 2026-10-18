@@ -1,0 +1,33 @@
+SQL JOINs in MySQL
+In SQL, JOINs are used to combine rows from two or more tables based on related columns
+usually a foreign key in one table referencing a primary key in another.
+
+We’ll use the following two tables:
+
+users table:
+id	name
+1	Aarav
+2	Sneha
+3	Raj
+
+addresses table
+id	user_id	    city
+1	1	        Mumbai
+2	2	        Kolkata
+3	4	        Delhi
+
+Note: user_id is a foreign key that references users.id.
+
+=========================================================================================
+1. INNER JOIN
+Returns only the matching rows from both tables.
+
+2. LEFT JOIN
+Returns all rows from the left table (users),
+and matching rows from the right table (addresses).
+If no match is found, NULLs are returned.
+
+3. RIGHT JOIN
+Returns all rows from the right table (addresses),
+and matching rows from the left table (users).
+If no match is found, NULLs are returned.
