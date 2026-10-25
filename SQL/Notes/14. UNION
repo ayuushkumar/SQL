@@ -30,6 +30,7 @@ INSERT INTO admin_users (id, name, email, gender, date_of_birth, salary) VALUES
 ========================================================================================
 Step 3: Use UNION to Combine Data
 Let’s combine the active and admin user names.
+
 SELECT name FROM users
 UNION
 SELECT name FROM admin_users;
@@ -38,6 +39,26 @@ This returns a single list of unique names from both tables.
 
 UNION ALL Example
 If you want to keep duplicate names (if any), use UNION ALL.
+
 SELECT name FROM users
 UNION ALL
 SELECT name FROM admin_users;
+
+=======================================================================================
+Rules of UNION
+The number of columns and their data types must match in all SELECT statements.
+UNION removes duplicates by default.
+UNION ALL keeps duplicates.
+
+When to Use UNION
+When you have two similar tables (like current and archived data).
+When you need to combine filtered results (e.g., high-salary users from two sources).
+When performing cross-category reporting.
+
+======================================================================================
+
+Summary:
+
+Operator	Behavior
+UNION	Combines results, removes duplicates
+UNION ALL	Combines results, keeps duplicates
