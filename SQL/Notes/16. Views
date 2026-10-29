@@ -1,0 +1,17 @@
+A view in MySQL is a virtual table based on the result of a SELECT query.
+It does not store data itself — it always reflects the current data in the base tables.
+
+Views are useful when:
+
+You want to simplify complex queries
+You want to reuse logic
+You want to hide certain columns from users
+You want a "live snapshot" of filtered data
+
+== Queries in the SQLqueries file ==
+
+Summary
+Views act like saved SELECT queries
+Views are not duplicated data
+Changes to base tables are reflected automatically
+Great for simplifying complex queries or creating filtered access
