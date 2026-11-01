@@ -1,0 +1,20 @@
+- MySQL Indexes
+Indexes in MySQL are used to speed up data retrieval.
+They work like the index of a book — helping the database engine find rows faster,
+especially for searches, filters, and joins.
+
+Important Notes
+- Indexes consume extra disk space
+- Indexes slow down INSERT, UPDATE, and DELETE operations slightly
+(because the index must be updated)
+- Use indexes only when needed (i.e., for columns used in WHERE, JOIN, ORDER BY)
+
+== Queries in the SQLqueries file ==
+
+Summary
+Feature	        Description
+SHOW INDEXES	View current indexes on a table
+CREATE INDEX	Create single or multi-column indexes
+DROP INDEX	    Remove an index
+Use when	    Query performance on large tables is a concern
+Avoid on	    Columns that are rarely queried or always unique
