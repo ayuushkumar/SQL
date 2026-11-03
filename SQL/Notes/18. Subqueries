@@ -1,0 +1,21 @@
+A subquery is a query nested inside another query.
+Subqueries are useful for breaking down complex problems into smaller parts.
+
+They can be used in:
+
+SELECT statements
+WHERE clauses
+FROM clauses
+
+Example Scenario: Salary Comparison
+Suppose we want to find all users who earn more than the average salary of all users.
+
+==== Queries in the SQLqueries file ====
+
+Summary
+Subquery Type	Use Case
+Scalar Subquery	Returns one value (e.g. AVG, MAX)
+Subquery with IN	Returns multiple values
+Subquery in SELECT	Shows related calculated value
+Subquery in FROM	Acts as a virtual table
+Subqueries are powerful tools when filtering based on computed or dynamic conditions.
