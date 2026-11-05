@@ -1,0 +1,29 @@
+The GROUP BY clause is used to group rows that have the same values in specified columns.
+ It is typically used with aggregate functions like COUNT, SUM, AVG, MIN, or MAX.
+
+The HAVING clause is used to filter groups after aggregation —
+similar to how WHERE filters individual rows.
+
+===================================================================================
+
+Example Table: users
+Assume this is your users table:
+
+id	name	    gender	salary	referred_by_id
+1	Aarav	    Male	80000	NULL
+2	Sneha	    Female	75000	1
+3	Raj	        Male	72000	1
+4	Fatima	    Female	85000	2
+5	Priya	    Female	70000	NULL
+
+================================================================================
+
+==== Queries in the SQLqueries file ====
+
+Summary
+Clause	Purpose	Can use aggregates?
+WHERE	Filters rows before grouping	No
+GROUP BY	Groups rows based on column values	N/A
+HAVING	Filters groups after aggregation	Yes
+Use GROUP BY to organize data, and HAVING to filter those groups based on
+aggregate conditions.
